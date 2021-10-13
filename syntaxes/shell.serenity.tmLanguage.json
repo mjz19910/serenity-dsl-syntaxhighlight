@@ -30,13 +30,31 @@
 	],
 	"repository": {
 		"comment": {
-			"name":"comment"
+			"name":"comment.line",
+			"match": "#.+?\n"
 		},
 		"pipeline":{
 			"name":"pipeline"
 		},
 		"string":{
-			"name":"string"
+			"name":"string",
+			"begin": "\"",
+			"end":"\"",
+			"patterns": [
+				{
+					"include":"#string_content"
+				}
+			]
+		},
+		"string_content":{
+			"patterns": [
+				{
+					"include":"#escaped-char"
+				}
+			]
+		},
+		"escaped-char":{
+			"match" : "\\."
 		},
 		"function": {
 			"name": "function.shell.serenity",

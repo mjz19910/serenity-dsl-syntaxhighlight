@@ -23,3 +23,4 @@ Provides TextMate Grammar-based syntax highlighting for the IPC, Shell and GML l
 GML uses the .gml extension, which is also used for the GameMaker language. You may have to set the language for each file manually.
 
 Shell uses the .sh extension, which is already in use for normal shells. You may have to set the language for each file manually.
+You may also change the language association for all shell scripts if your editor supports it.
