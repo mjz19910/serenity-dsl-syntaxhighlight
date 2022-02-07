@@ -45,6 +45,17 @@
                     ".ipc"
                 ],
                 "configuration": "./language-config-ipc.json"
+            },
+            {
+                "id": "serenity-shell",
+                "aliases": [
+                    "Shell (SerenityOS)",
+                    "serenity-shell"
+                ],
+                "extensions": [
+                    ".sh"
+                ],
+                "configuration": "./language-config.shell.serenity.json"
             }
         ],
         "grammars": [
@@ -57,6 +68,11 @@
                 "language": "serenity-ipc",
                 "scopeName": "source.serenity-ipc",
                 "path": "./syntaxes/serenity-ipc.tmLanguage.json"
+            },
+            {
+                "language": "serenity-shell",
+                "scopeName": "source.shell.serenity",
+                "path": "./syntaxes/shell.serenity.tmLanguage.json"
             }
         ]
     },

@@ -12,3 +12,4 @@
 ## 0.1.0
 
 - Support for formatting GML files with Serenity's own GML formatter.
+- Support for Serenity Shell syntax
